@@ -11,4 +11,13 @@ public class Mascota {
         System.out.println("Edad: "+edad);
     }
 
+    public static void main(String[] args) {
+        Mascota mascota1 = new Mascota();
+        mascota1.nombre = "Nuby";
+        mascota1.especie = "Gato";
+        mascota1.edad = 6;
+        mascota1.mostrarMascota();
+
+    }
+
 }

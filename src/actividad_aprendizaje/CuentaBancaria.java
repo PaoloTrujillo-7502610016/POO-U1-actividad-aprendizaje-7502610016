@@ -8,6 +8,20 @@ public class CuentaBancaria {
     void mostrarCuenta(){
         System.out.println("Numero: "+numero);
         System.out.println("Titular: "+titular);
-        System.out.println("Saldo: "+saldo);
+        System.out.println("Saldo: $"+saldo);
+    }
+
+    public static void main(String[] args) {
+        CuentaBancaria cuenta1 = new CuentaBancaria();
+        cuenta1.numero = 123;
+        cuenta1.titular = "Paolo";
+        cuenta1.saldo = 500;
+        cuenta1.mostrarCuenta();
+
+        CuentaBancaria cuenta2 = new CuentaBancaria();
+        cuenta2.numero = 243;
+        cuenta2.titular = "Daniela";
+        cuenta2.saldo = 600;
+        cuenta2.mostrarCuenta();
     }
 }

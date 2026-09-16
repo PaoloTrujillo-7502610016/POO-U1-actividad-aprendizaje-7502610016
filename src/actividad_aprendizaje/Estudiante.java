@@ -11,4 +11,15 @@ public class Estudiante {
         System.out.println("Semestre: "+semestre);
     }
 
+    public static void main(String[] args) {
+        Estudiante estudiante = new Estudiante();
+        estudiante.nombre = "Paolo Trujillo";
+        estudiante.codigo = "7502610016";
+        estudiante.semestre = 2;
+
+        estudiante.mostrarInfo();
+    }
+
 }
+
+
