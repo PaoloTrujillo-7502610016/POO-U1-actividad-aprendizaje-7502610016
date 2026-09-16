@@ -1,0 +1,13 @@
+package actividad_aprendizaje;
+
+public class CuentaBancaria {
+    int numero;
+    String titular;
+    double saldo;
+
+    void mostrarCuenta(){
+        System.out.println("Numero: "+numero);
+        System.out.println("Titular: "+titular);
+        System.out.println("Saldo: "+saldo);
+    }
+}
