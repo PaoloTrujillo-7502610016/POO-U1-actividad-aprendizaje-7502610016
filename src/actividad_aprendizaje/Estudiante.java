@@ -16,13 +16,18 @@ public class Estudiante {
     }
 
     public static void main(String[] args) {
-        Estudiante estudiante = new Estudiante();
-        estudiante.nombre = "Paolo Trujillo";
-        estudiante.codigo = "7502610016";
-        estudiante.semestre = 2;
+        Estudiante estudiante1 = new Estudiante();
+        estudiante1.nombre = "Paolo Trujillo";
+        estudiante1.codigo = "7502610016";
+        estudiante1.semestre = 2;
 
-        estudiante.mostrarInfo();
+        estudiante1.mostrarInfo();
     }
+
+    //Estudiante es una clase porque es el molde o plano que describe qué atributos tendra un estudiante y define los metodos de lo que puede hacer.
+    //estudiante1 es la creacion hecha a partir del molde anterior. Un objeto tiene los valores concretos de sus atributos definidos en el molde.
+
+
 
 }
 
