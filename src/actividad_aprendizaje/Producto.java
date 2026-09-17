@@ -21,6 +21,16 @@ public class Producto {
         System.out.println("Stock: "+stock);
     }
 
+    //Metodo static
+    static void crearProductoBasico(String nombre, double precio, int stock) {
+        Producto nuevoProducto = new Producto();
+        //El metodo funciona como constructor con parametros
+        nuevoProducto.nombre = nombre;
+        nuevoProducto.precio = precio;
+        nuevoProducto.stock = stock;
+        nuevoProducto.mostrarProducto();
+    }
+
     void vender(int cantidad){
         stock -= cantidad;
     }
@@ -48,6 +58,10 @@ public class Producto {
         //Instancia con constructor parametrizado
         Producto producto3 = new Producto("Azucar",4300,13);
         producto3.mostrarProducto();
+
+        //Creacion de objeto con metodo static
+        crearProductoBasico("Harina",4800,7);
+        crearProductoBasico("Huevos",600,70);
 
     }
 

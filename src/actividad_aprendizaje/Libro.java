@@ -4,12 +4,20 @@ public class Libro {
     String titulo;
     String autor;
 
-    public Libro() {//Constructor vacio
+    //Constructor vacio
+    public Libro() {
     }
 
-    public Libro(String titulo, String autor) {//Constructor con Parámetros
+    //Constructor con Parámetros
+    public Libro(String titulo, String autor) {
         this.titulo = titulo;
         this.autor = autor;
+    }
+
+    //Constructor copia
+    public Libro(Libro copia) {
+        this.titulo = copia.titulo;
+        this.autor = copia.autor;
     }
 
     public static void main(String[] args){
@@ -25,6 +33,11 @@ public class Libro {
         Libro libro3 = new Libro("Harry Potter", "JK Grouling");
         Libro libro4 = new Libro("Del amor y otros demonis", "Gabriel Garcia Marquez");
 
+        //Instancia con constructor copia
+        Libro copia = new Libro(libro4);
+
         //Conclusion: la clase Libro es la plantilla porque define cuál sera la información que tendrá cada libro, esta plantilla define que cada libro debe tener un titulo y un autor. Los objetos libro1, libro2, etc, son las creaciones que surgen a partir de la plantilla de la clase, y cada uno tiene asignado un titulo y un autor, y puede suceder que los objetos la misma informacion, pero siguen siendo objetos diferentes.
+
+        System.out.println(libro4.titulo+libro4.autor+copia.titulo+copia.autor);
     }
 }
