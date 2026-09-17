@@ -11,6 +11,16 @@ public class Producto {
         System.out.println("Stock: "+stock);
     }
 
+    void vender(int cantidad){
+        stock -= cantidad;
+    }
+
+    void reabastecer(int cantidad){
+        stock += cantidad;
+    }
+
+
+
     public static void main(String[] args) {
         Producto producto1 = new Producto();
         producto1.nombre = "Arroz";

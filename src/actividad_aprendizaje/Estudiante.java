@@ -11,6 +11,10 @@ public class Estudiante {
         System.out.println("Semestre: "+semestre);
     }
 
+    void cambiarSemestre(int nuevoSemestre){
+        semestre = nuevoSemestre;
+    }
+
     public static void main(String[] args) {
         Estudiante estudiante = new Estudiante();
         estudiante.nombre = "Paolo Trujillo";

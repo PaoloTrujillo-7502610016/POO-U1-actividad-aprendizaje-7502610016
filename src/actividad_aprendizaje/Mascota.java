@@ -11,6 +11,10 @@ public class Mascota {
         System.out.println("Edad: "+edad);
     }
 
+    void cumplirAnios(){
+        edad = edad+1;
+    }
+
     public static void main(String[] args) {
         Mascota mascota1 = new Mascota();
         mascota1.nombre = "Nuby";

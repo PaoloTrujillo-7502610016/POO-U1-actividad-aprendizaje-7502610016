@@ -6,9 +6,23 @@ public class Vehiculo {
     int velocidadActual;
 
     void mostrarEstado(){
-        System.out.println("Marca: "+marca);
+        System.out.println("\nMarca: "+marca);
         System.out.println("Modelo: "+modelo);
         System.out.println("Velocidad: "+velocidadActual);
+
+    }
+
+    public void acelerar(){
+        velocidadActual = velocidadActual+10;
+        System.out.println("Velocidad acelerada: "+velocidadActual);
+    }
+
+    public void frenar(){
+        if (velocidadActual >= 10){
+            velocidadActual -= 10;
+        }else
+            System.out.println("Ya vas muy despacio!");
+        System.out.println("Velocidad frenada: "+velocidadActual);
     }
 
     public static void main(String[] args) {

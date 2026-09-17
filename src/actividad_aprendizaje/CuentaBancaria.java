@@ -11,6 +11,18 @@ public class CuentaBancaria {
         System.out.println("Saldo: $"+saldo);
     }
 
+    void consignar(double valor){
+        saldo += valor;
+    }
+
+    void retirar(double valor){
+
+        if(saldo >= valor){
+            saldo -= valor;
+        }else
+            System.out.println("Saldo insuficiente");
+    }
+
     public static void main(String[] args) {
         CuentaBancaria cuenta1 = new CuentaBancaria();
         cuenta1.numero = 123;
