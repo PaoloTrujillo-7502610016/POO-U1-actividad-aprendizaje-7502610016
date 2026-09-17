@@ -4,12 +4,22 @@ public class Libro {
     String titulo;
     String autor;
 
-    public Libro(String titulo, String autor) {
+    public Libro() {//Constructor vacio
+    }
+
+    public Libro(String titulo, String autor) {//Constructor con Parámetros
         this.titulo = titulo;
         this.autor = autor;
     }
 
     public static void main(String[] args){
+
+        //Instancia con constructor vacio:
+        Libro libro0 = new Libro();
+        libro0.titulo = "La melancolia de los feos";
+        libro0.autor = "Mario Mendoza";
+
+        //Instancias con constructor con parametros:
         Libro libro1 = new Libro("Cien años de soledad", "Gabriel Garcia Marquez");
         Libro libro2 = new Libro("Trading en la Zona", "Mark Douglas");
         Libro libro3 = new Libro("Harry Potter", "JK Grouling");

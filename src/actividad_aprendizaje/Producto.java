@@ -5,6 +5,16 @@ public class Producto {
     double precio;
     int stock;
 
+    //Constructor vacio:
+    public Producto() {}
+
+    //Constructor con parametros:
+    public Producto(String nombre, double precio, int stock) {
+        this.nombre = nombre;
+        this.precio = precio;
+        this.stock = stock;
+    }
+
     void mostrarProducto(){
         System.out.println("Nombre: "+nombre);
         System.out.println("Precio: $"+precio);
@@ -22,6 +32,7 @@ public class Producto {
 
 
     public static void main(String[] args) {
+        //Instancia con constructor vacio:
         Producto producto1 = new Producto();
         producto1.nombre = "Arroz";
         producto1.precio = 2300;
@@ -34,11 +45,10 @@ public class Producto {
         producto2.stock = 15;
         producto2.mostrarProducto();
 
-        Producto producto3 = new Producto();
-        producto3.nombre = "Azucar";
-        producto3.precio = 4300;
-        producto3.stock = 13;
+        //Instancia con constructor parametrizado
+        Producto producto3 = new Producto("Azucar",4300,13);
         producto3.mostrarProducto();
+
     }
 
 
